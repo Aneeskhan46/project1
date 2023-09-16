@@ -1,0 +1,58 @@
+
+
+<RLabel@ButtonBehavior+Label>:
+<LoginUI>:
+    orientation: 'vertical'
+    spacing:'1.338cm'
+    padding:'2.04cm'
+    BoxLayout:
+        orientation:'vertical'
+        size_hint_y: None
+        height:'4.169cm'
+        AsyncImage:
+            source:"https://w7.pngwing.com/pngs/563/78/png-transparent-music-listening-boy-listening-to-music-child-face-photography-thumbnail.png"
+            size_hint_y: None
+            height:"2.465cm"
+
+        Label:
+            text:'Sign Up'
+            font_size: '1.05833cm'
+
+    TextInput:
+        multiline:False
+        hint_text:"E-mail"
+        size_hint: None,None
+        size_hint_x: 1
+        height:'1.00cm'
+        font_size:'0.4cm'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        padding : self.height/2 - self.font_size/2
+
+    TextInput:
+        multiline:False
+        size_hint: None,None
+        size_hint_x: 1
+        height:'1.00cm'
+        hint_text:"Password"
+        font_size:'0.4cm'
+        password:True
+        padding : self.height/2 - self.font_size/2
+
+
+    Button:
+        size_hint: None,None
+        size_hint_x: 1
+        height:'1.00cm'
+        text:'Log In'
+        font_size:'0.635cm'
+
+    BoxLayout:
+        orientation:'horizontal'
+        Label:
+            text:'Not a user yet?'
+            font_size:'0.352778cm'
+            halign:'left'
+        RLabel:
+            text:'Register'
+            font_size:'0.56444401cm'
+            color:0,1,1,1
